@@ -37,6 +37,7 @@ EOS
     ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
     ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    ss.tvos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.osx.frameworks = 'CoreServices'
   end
 
@@ -72,6 +73,7 @@ EOS
     ss.ios.deployment_target = '7.0'
     ss.osx.deployment_target = '10.9'
     ss.watchos.deployment_target = '2.0'
+    ss.tvos.deployment_target = '9.0'
     
     ss.dependency 'AFNetworking/Serialization'
     ss.ios.dependency 'AFNetworking/Reachability'
